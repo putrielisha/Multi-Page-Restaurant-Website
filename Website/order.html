@@ -1,0 +1,126 @@
+<!--Putri Elisha-->
+<!--231962J-->
+<!--   -->
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Mini Project</title>
+        <link rel="stylesheet" href="styles/project-styles.css">
+        <style>
+       
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><img src="images/koufu-logo.png" alt="Koufu" title="Koufu" height="50"></li>
+                    <li><a href="project.html" title="Home">Home</a></li>
+                    <li><a href="menu.html" title="Our Menu">Menu</a></li>
+                    <li><a href="order.html" title="Order Here">Order</a></li>
+                    <li><a href="about.html" title="About Us">About Us</a></li>
+                    <li><a href="membership.html" title="Membership Registration">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="orderpage">
+            <h1>Order Here</h1>
+            <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <fieldset class="orderfieldset">
+                    <legend class="orderdetails">Personal Details</legend>
+                    <div class="personal">
+                        <label>Name:</label><br>
+                        <input type="text" name="myName" placeholder="Enter your name" required>
+                        <br><br>
+                        <label>Phone Number:</label><br>
+                        <input type="tel" name="myPhone" pattern="[689]{1}[0-9]{7}" placeholder="Enter your phone number" required>
+                        <br><br>
+                        <label>Email:</label><br>
+                        <input type="email" name="myEmail" placeholder="Enter valid Email Address" required>
+                        <br>
+                    </div>
+                </fieldset>
+                <div class="ordercontainer">
+                <fieldset class="orderfieldset">
+                    <legend class="orderdetails">Drink Order</legend>
+                    <div class="drinkorder">
+                        <label>Select your drink: </label><br>
+                        <select name="myDrink">
+                            <option value="" disabled selected>Select a drink</option>
+                            <option value="1">Kopi</option>
+                            <option value="2">Kopi O</option>
+                            <option value="3">Kopi C</option>
+                            <option value="4">Teh</option>
+                            <option value="5">Teh O</option>
+                            <option value="6">Teh C</option>
+                            <option value="7">Yuan Yang</option>
+                            <option value="8">Yuan Yang C</option>
+                            <option value="9">Milo</option>
+                            <option value="10">Bandung (Cold only)</option>
+                            <option value="11">Ice Lemon Tea (Cold only)</option>
+                            <option value="12">Iced Rose Water (Cold only)</option>
+                            <option value="13">Ribena (Cold only)</option>
+                            <option value="14">None</option>
+                        </select>
+                        <br><br>
+                        <input type="radio" name="myGender" value="1">Hot       
+                        <input type="radio" name="myGender" value="2">Cold
+                        <br><br>
+                        <label>Enter quantity:</label><br>
+                        <input type="number" name="myQuantity">
+                        <br><br>
+                        <label>Other requests:</label><br>
+                        <textarea name="myFeedback" rows="3" cols="40"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="orderfieldset">
+                    <legend class="orderdetails">Breakfast Order</legend>
+                    <div class="foodorder">
+                        <label>Select your breakfast set:</label><br>
+                        <select name="mySet">
+                            <option value="" disabled selected>Select a breakfast set</option>
+                            <option value="15">Breakfast set 1</option>
+                            <option value="16">Breakfast set 2</option>
+                            <option value="17">Breakfast set 3</option>
+                            <option value="18">None</option>
+                        </select>
+                        <br><br>
+                        <label>Select your drink of choice:</label><br>
+                        <select name="mySetDrink">
+                            <option value="" disabled selected>Select your drink of choice</option>
+                            <option value="1">Kopi</option>
+                            <option value="2">Kopi O</option>
+                            <option value="3">Kopi C</option>
+                            <option value="4">Teh</option>
+                            <option value="5">Teh O</option>
+                            <option value="6">Teh C</option>
+                            <option value="7">Yuan Yang</option>
+                            <option value="8">Yuan Yang C</option>
+                            <option value="9">Milo</option>
+                        </select>
+                        <br><br>
+                        <label>Enter quantity:</label><br>
+                        <input type="number" name="myQuantity">
+                        <br><br>
+                        <label>Other requests:</label><br>
+                        <textarea name="myFeedback" rows="3" cols="40"></textarea>
+                    </div>
+                </fieldset>
+                </div>
+                <div class="orderbuttons">
+                    <a href="menu.html" class="buttoncta">See Menu</a> 
+                    <button type="submit">Add to cart</button>
+                    <button type="reset">Cancel</button>                  
+                </div>
+            </form>
+        </section>
+        <footer>
+            Copyright&copy; Koufu 2024
+           </footer> 
+       <div class="contact">
+        <p>Enquiries?</p>
+        <p>Email Us <a href="mailto:231963J@mymail.nyp.edu.sg?Subject=Inquiries&amp;body=Dear%20Koufu,">Here!</a></p>
+    </div>
+    </body>
+</html>
